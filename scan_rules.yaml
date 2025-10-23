@@ -1,0 +1,13 @@
+rules:
+  - name: "Ollama"
+    keywords: ["ollama"]
+  - name: "vLLM"
+    keywords: ["vllm"]
+  - name: "llama.cpp"
+    keywords: ["llama", "gguf"]
+  - name: "Embedding"
+    keywords: ["sentence_transformers", "embedding"]
+  - name: "Custom LLM Server"
+    keywords: ["fastapi", "uvicorn"]
+  - name: "Python Process"
+    keywords: ["python"]

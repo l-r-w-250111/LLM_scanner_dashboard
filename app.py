@@ -1,3 +1,4 @@
+# file: llm_scanner_dashboard.py
 import streamlit as st
 import psutil
 import subprocess
@@ -129,19 +130,19 @@ local, gpu, containers = full_scan()
 
 st.subheader("🧩 Local Process Detection Results")
 if local:
-    st.dataframe(local, use_container_width=True)
+    st.dataframe(local, width='stretch')
 else:
     st.info("No relevant processes were detected.")
 
 st.subheader("🧠 GPU Usage (nvidia-smi)")
 if gpu:
-    st.dataframe(gpu, use_container_width=True)
+    st.dataframe(gpu, width='stretch')
 else:
     st.info("Could not retrieve GPU information.")
 
 st.subheader("📦 Docker / Podman Containers")
 if containers:
-    st.dataframe(containers, use_container_width=True)
+    st.dataframe(containers, width='stretch')
 else:
     st.info("No running Docker / Podman containers found.")
 
